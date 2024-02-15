@@ -1,0 +1,80 @@
+<style>
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding: 65px;
+    background-image: url("/textura2.svg");
+    border-radius: 10px;
+  }
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  .service-icon {
+    font-size: 40px;
+    color: #05A7A7;
+    margin-bottom: 20px;
+  }
+  .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .service-description {
+    font-size: 14px;
+    color: #666;
+  }
+
+  @media (max-width: 992px) {
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .services {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>
+
+<section class="services">
+  <div class="service-card">
+    <i class="fas fa-car-battery service-icon"></i>
+    <h3 class="service-title">Pasa-corriente</h3>
+    <p class="service-description">Servicio de asistencia para arranque de vehículos.</p>
+  </div>
+  <div class="service-card">
+    <i class="fas fa-tools service-icon"></i>
+    <h3 class="service-title">Mecánico</h3>
+    <p class="service-description">Servicio de reparación mecánica para vehículos.</p>
+  </div>
+  <div class="service-card">
+    <i class="fas fa-gas-pump service-icon"></i>
+    <h3 class="service-title">Gasolina</h3>
+    <p class="service-description">Suministro de gasolina para vehículos.</p>
+  </div>
+  <div class="service-card">
+    <i class="fas fa-wrench service-icon"></i>
+    <h3 class="service-title">Talacheria</h3>
+    <p class="service-description">Servicio de reparación de llantas y rines.</p>
+  </div>
+  <div class="service-card">
+    <i class="fas fa-truck-pickup service-icon"></i>
+    <h3 class="service-title">Grúa</h3>
+    <p class="service-description">Servicio de remolque para vehículos.</p>
+  </div>
+  <div class="service-card">
+    <i class="fas fa-key service-icon"></i>
+    <h3 class="service-title">Cerrajero</h3>
+    <p class="service-description">Servicio de apertura de vehículos.</p>
+  </div>
+</section>

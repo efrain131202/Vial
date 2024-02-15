@@ -1,0 +1,57 @@
+body {			
+    font-family: 'Rubik', sans-serif;
+    background-image: url("/fondo.png");
+}
+html {
+  scroll-behavior: smooth;	
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #05A7A7;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #5CC5C5;
+}
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #05A7A7;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  background-color: #05A7A7;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
