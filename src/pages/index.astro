@@ -27,7 +27,7 @@ import Gallery from "../components/Gallery.astro";
       <ul>
         <li><a class="active" href="#">Início</a></li>
         <li><a href="#">Servicios</a></li>
-        <li><a href="#">Galeria</a></li>
+        <li><a href="#Gallery">Galeria</a></li>
         <li><a href="#">Contactos</a></li>
       </ul>
     </nav>
@@ -47,17 +47,16 @@ import Gallery from "../components/Gallery.astro";
 	    text-decoration: none;
 	    list-style: none;
 	    box-sizing: border-box;
+      scroll-behavior: smooth;
       body {
       font-family: "Rubik", sans-serif;
       background-image: url("/fondo.png");
       }
-      html {
-      scroll-behavior: smooth;
-      }
-
       nav {
 	    height: 80px;
 	    width: 100%;
+      position: fixed;
+      background-color: white;
       }
       label.logo {
 	    color: #05A7A7;
@@ -80,7 +79,6 @@ import Gallery from "../components/Gallery.astro";
 	    font-size: 17px;
 	    padding: 7px 13px;
 	    border-radius: 3px;
-	    text-transform: uppercase;
       }
       a:hover {
       transition: 0.5s;
